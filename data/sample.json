@@ -1,0 +1,9 @@
+{
+  "event_id": "092108-010-sample-001",
+  "event_type": "COURSE_PUBLISHED",
+  "aggregate_type": "learner_profile",
+  "aggregate_id": "senior_learning_continuity-001",
+  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "version": 1,
+  "summary": "登记银龄多形态课程接续的首条领域记录"
+}
