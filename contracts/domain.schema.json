@@ -21,9 +21,28 @@
       "enum": [
         "COURSE_PUBLISHED",
         "ENROLLMENT_PLACED",
-        "SUPPORT_UPDATED",
+        "WAITLIST_PROMOTED",
+        "WAITLIST_RELEASED",
+        "PAUSE_FROZEN",
+        "PAUSE_RESUMED",
+        "ENROLLMENT_ENDED",
+        "SUBSIDY_ALLOCATED",
+        "SUBSIDY_RETURNED",
+        "SUBSIDY_RELINKED",
         "SESSION_RECORDED",
-        "OUTCOME_REVIEWED"
+        "PRACTICE_RECORDED",
+        "CAREGIVER_GRANTED",
+        "CAREGIVER_REVOKED",
+        "TEACHER_CHANGED",
+        "COURSE_CANCELLED",
+        "PROPOSAL_OPENED",
+        "PROPOSAL_CHOICE_RECORDED",
+        "PROPOSAL_CONFIRMED",
+        "PROPOSAL_REJECTED",
+        "PROPOSAL_DISPUTED",
+        "PROPOSAL_EXPIRED",
+        "PROPOSAL_RESOLVED",
+        "SESSIONS_MIGRATED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +51,8 @@
         "learner_profile",
         "course_offering",
         "enrollment",
-        "learning_record"
+        "learning_record",
+        "continuity_proposal"
       ]
     },
     "aggregate_id": {
@@ -50,6 +70,14 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "event_key": {
+      "type": ["string", "null"],
+      "description": "命令级幂等键：同键内容一致时按重放空转，内容冲突时拒绝"
+    },
+    "payload": {
+      "type": "object",
+      "description": "事件明细，具体结构由事件类型决定，时间字段使用 ISO-8601"
     }
   },
   "additionalProperties": true

@@ -1,9 +1,21 @@
 {
-  "event_id": "092108-010-sample-001",
-  "event_type": "COURSE_PUBLISHED",
-  "aggregate_type": "learner_profile",
-  "aggregate_id": "senior_learning_continuity-001",
-  "occurred_at": "2026-09-20T18:00:00+08:00",
-  "version": 1,
-  "summary": "登记银龄多形态课程接续的首条领域记录"
+  "event_id": "ev-pause-sample-001",
+  "event_type": "PAUSE_FROZEN",
+  "aggregate_type": "enrollment",
+  "aggregate_id": "ENR-2026-0007",
+  "occurred_at": "2026-09-15T10:00:00+08:00",
+  "version": 3,
+  "event_key": "pause:ENR-2026-0007",
+  "summary": "学员短期住院，冻结 6 个尚未发生的课次；候补优先级、练习成果与补贴余额保留",
+  "payload": {
+    "session_ids": [
+      "IP1-S3",
+      "IP1-S4",
+      "IP1-S5",
+      "IP1-S6",
+      "IP1-S7",
+      "IP1-S8"
+    ],
+    "reason": "短期住院，恢复后转电话辅导"
+  }
 }

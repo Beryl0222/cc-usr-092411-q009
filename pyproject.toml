@@ -1,5 +1,5 @@
 [project]
 name = "senior-learning-continuity"
 version = "0.1.0"
-description = "领域事件基础校验"
+description = "银龄课程中断接续与支持迁移：领域事件与事件溯源服务"
 requires-python = ">=3.11"
