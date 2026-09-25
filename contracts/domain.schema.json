@@ -20,10 +20,22 @@
       "type": "string",
       "enum": [
         "COURSE_PUBLISHED",
+        "COURSE_CANCELLED",
         "ENROLLMENT_PLACED",
-        "SUPPORT_UPDATED",
-        "SESSION_RECORDED",
-        "OUTCOME_REVIEWED"
+        "ENROLLMENT_PAUSED",
+        "ENROLLMENT_RESUMED",
+        "SESSION_FROZEN",
+        "SEAT_RELEASED",
+        "WAITLIST_PROMOTED",
+        "TRANSFER_PROPOSED",
+        "TRANSFER_CONFIRMED",
+        "TRANSFER_BATCH_APPLIED",
+        "PROPOSAL_REJECTED",
+        "PROPOSAL_HELD",
+        "SUBSIDY_LEDGERED",
+        "ATTENDANCE_RECORDED",
+        "PHONE_CONFIRMATION_RECORDED",
+        "CAREGIVER_AUTHORIZED"
       ]
     },
     "aggregate_type": {
@@ -50,6 +62,15 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "actor": {
+      "type": ["string", "null"]
+    },
+    "causation_id": {
+      "type": ["string", "null"]
     }
   },
   "additionalProperties": true

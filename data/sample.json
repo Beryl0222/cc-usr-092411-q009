@@ -1,9 +1,30 @@
 {
-  "event_id": "092108-010-sample-001",
+  "event_id": "course_published-092108-001",
   "event_type": "COURSE_PUBLISHED",
-  "aggregate_type": "learner_profile",
-  "aggregate_id": "senior_learning_continuity-001",
-  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "aggregate_type": "course_offering",
+  "aggregate_id": "c-phone",
+  "occurred_at": "2026-09-01T09:00:00+08:00",
   "version": 1,
-  "summary": "登记银龄多形态课程接续的首条领域记录"
+  "summary": "发布银龄智能手机电话辅导，教师资历/容量/支持能力固定",
+  "actor": null,
+  "causation_id": null,
+  "payload": {
+    "title": "银龄智能手机电话辅导",
+    "mode": "phone",
+    "teacher": {
+      "id": "teacher-p",
+      "name": "陈辅导",
+      "qualifications": ["老年照护一级", "电话辅导认证"]
+    },
+    "capacity": 4,
+    "supports_offered": ["hearing_loop", "wheelchair"],
+    "high_support": true,
+    "sessions": [
+      {"session_id": "phone-s1", "starts_at": "2026-09-02T10:00:00+08:00", "slot": "phone_am"}
+    ],
+    "subsidy_quota": 4,
+    "subsidy_per_session": 8,
+    "seat_confirm_deadline": null,
+    "confirm_window_hours": 240
+  }
 }
